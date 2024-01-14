@@ -6,5 +6,5 @@ In this Wireshark project, I aim to demonstrate proficiency in network analysis 
 
 I downloaded the Kali Linux ISO, validated the checksum, and used VirtualBox to create a virtual machine allocated with 2GB RAM and 20GB disk space. I attached the ISO file as a virtual optical drive and installed Kali with the default options, simply setting a username and password. After a smooth graphical install, I now have a completed Kali Linux VM ready to use. Wireshark is also preinstalled on Kali linux
 
-![Setup Image](Wireshark%20Project%20images/setup.png)
+<img src="Wireshark%20Project%20images/setup.png" alt="Setup Image" width="300"/>
 
