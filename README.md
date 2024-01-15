@@ -24,5 +24,6 @@ I use `'ip.dst == 10.0.2.15'` , ip.dst filter is used to filter packets based on
 I want to see the first handshake when visiting google, so I apply the filter `tcp.port == 443 && frame matches "google"`
 
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/b6e23d29-254f-4fe5-98fc-4e29927303b6)
-The filter `tcp.port == 443 && frame matches "google"` in Wireshark selects packets from port 443(https traffic) containing the string "google" in their payload, effectively filtering for HTTPS traffic with occurrences of the term "google."
+The filter `tcp.port == 443 && frame matches "google"` in Wireshark selects packets from port 443(https traffic) containing the string "google" in their payload, effectively filtering for HTTPS traffic with occurrences of the term "google." I know it uses TLSv1.3 protocol and it is the first packetcapture
+
 
