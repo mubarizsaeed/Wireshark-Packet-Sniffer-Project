@@ -31,4 +31,11 @@ Now I want to see a TCP conversation filter I will go up to Stats ---> Conversat
 Then at the Wireshark Converstation window TCP category I'll select a conversation im interested which is the packets associated with googles ip which I know is `142.251.32.110`
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/f41c344f-5112-42d2-8047-bb238e9aa22b)
 
+The filter gets applied `ip.addr==10.0.2.15 && tcp.port==37106 && ip.addr==142.250.65.195 && tcp.port==443`
+![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/5ffb9127-9796-45eb-b9c7-7b6ae6e7da92)
+This Wireshark filter isolates TCP packets with source IP 10.0.2.15 on port 37106, destined for Google's 142.250.65.195 on HTTPS port 443
 
+I can also use the matches or contains keyword to find a specifc string in wireshark: `ip matches "google"` or `eth matches "google" `
+![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/07418985-36e7-4d93-a3a4-923331f25312)
+
+### Start capture on Vulnerable website using Http protocol  
