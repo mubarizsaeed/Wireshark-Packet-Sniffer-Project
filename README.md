@@ -18,7 +18,7 @@ In this Wireshark project, I aim to demonstrate proficiency in network analysis 
 I select the Ethernet adapter on my wireshark in my vm to capture traffic on google.com
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/0757f772-1656-4bbe-ad73-4ae3c9ab8444)
 
-I use `'ip.dst == 10.0.2.15'` =, ip.dst filter is used to filter packets based on their destination IP address. 
+I use `'ip.dst == 10.0.2.15'` , ip.dst filter is used to filter packets based on their destination IP address. 
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/7684208f-ef20-458a-8d3e-9b7573a9247f)
 
 I want to see the first handshake when visiting google, so I apply the filter `tcp.port == 443 && frame matches "google"`
