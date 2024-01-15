@@ -43,4 +43,13 @@ I will visit the site `http://www.vulnweb.com/` it is a site to help you with ma
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/06985044-b088-4cc3-8d4c-48044b7f144f)
 I will choose the security tweets to test the website to log in while having my packet capture running on Wireshark:
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/8655b84d-98f6-43c5-bf9f-27c280416e9a)
-Now I will filter through the traffic searching for HTTP traffic and snifffor the login credentials 
+Now I will filter through the traffic searching for HTTP traffic and snifffor the login credentials:
+![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/5614c1d1-86c5-48bf-9a61-9215aa2759e3)
+I will use Wiresharks built in follow HTTP stream to find the credentials I'll select the POST response because the form data (such as username and password) is often sent to the server using a POST request.:
+![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/90a28003-fa1b-4437-a4ab-eb9c92d8a67c)
+The stream shows the GET request then the POST request from the serverside which include the username and password:
+![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/368a5997-2c96-4aba-af74-66efe1323b7b)
+In the sequence, an initial GET request fetches popular content, followed by a login attempt (POST request) with plaintext credentials. Subsequently, a redirection occurs after a successful login, and a GET request to the root is made with a cookie indicating the authenticated user. It is crucial for all websites to use encrypted protocols such as HTTPS
+
+
+
