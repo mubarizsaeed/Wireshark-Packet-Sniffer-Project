@@ -45,7 +45,7 @@ Tcp.analysis provides live metrics and analysis on a TCP flow, tracking sequence
 There is also the `Exclusion Filter`. It is used to narrow down the displayed packets by excluding those that match certain conditions.
 For example:
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/5b1a2115-bbd7-4ada-8a9c-9602415d8b82)
-This filter will exclude TCP, QUIC, LLDP, CDP, and Ethernet frames with the destination MAC address ff:ff:ff:ff:ff:ff. By using this filter, you will focus on capturing only DNS Or UDP packets which will significantly decrease clutter 
+This filter will exclude TCP, QUIC, LLDP, CDP, Ethernet frames, and MAC addresses. By using this filter, you will focus on capturing only DNS Or UDP packets which will significantly decrease clutter 
 
 ### Start capture on Vulnerable website using HTTP protocol  
 I will visit the site `http://www.vulnweb.com/` it is a site to help you with manual penetration testing or for educational purposes
