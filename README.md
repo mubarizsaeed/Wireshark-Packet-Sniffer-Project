@@ -41,6 +41,7 @@ I can also use the matches or contains keyword to find a specific string in Wire
 Another filter is the `tcp.analysis.flags`
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/eb3f7fa2-1253-4fa8-a20a-94f8e1da5eb1)
 Tcp.analysis provides live metrics and analysis on a TCP flow, tracking sequence/ACK numbers to calculate performance stats like round-trip time. Tcp.analysis.flags indicate what TCP control flags like SYN and ACK are set on each packet, showing the connection state.
+
 There is also the `Exclusion Filter`. It is used to narrow down the displayed packets by excluding those that match certain conditions.
 For example:
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/5b1a2115-bbd7-4ada-8a9c-9602415d8b82)
