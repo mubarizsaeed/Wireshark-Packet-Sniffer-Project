@@ -40,7 +40,7 @@ I can also use the matches or contains keyword to find a specific string in Wire
 
 Another filter is the `tcp.analysis.flags`
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/eb3f7fa2-1253-4fa8-a20a-94f8e1da5eb1)
-Tcp.analysis provides live metrics and analysis on a TCP flow, tracking sequence/ACK numbers to calculate performance stats like round-trip time. Tcp.analysis.flags indicates what TCP control flags like SYN and ACK are set on each packet, showing the connection state.
+Tcp.analysis provides live metrics and analysis on a TCP flow, tracking sequence/ACK numbers to calculate performance stats like round-trip time. Tcp.analysis.flags indicate what TCP control flags like SYN and ACK are set on each packet, showing the connection state.
 There is also the `Exclusion Filter`. It is used to narrow down the displayed packets by excluding those that match certain conditions.
 For example:
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/5b1a2115-bbd7-4ada-8a9c-9602415d8b82)
@@ -55,9 +55,9 @@ Now I will filter through the traffic searching for HTTP traffic and snifffor th
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/5614c1d1-86c5-48bf-9a61-9215aa2759e3)
 I will use Wiresharks built in follow HTTP stream to find the credentials I'll select the POST response because the form data (such as username and password) is often sent to the server using a POST request.:
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/90a28003-fa1b-4437-a4ab-eb9c92d8a67c)
-The stream shows the GET request then the POST request from the serverside which include the username and password:
+The stream shows the GET request and then the POST request from the serverside which includes the username and password:
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/368a5997-2c96-4aba-af74-66efe1323b7b)
-In the sequence, an initial GET request fetches popular content, followed by a login attempt (POST request) with plaintext credentials. Subsequently, a redirection occurs after a successful login, and a GET request to the root is made with a cookie indicating the authenticated user. It is crucial for all websites to use encrypted protocols such as HTTPS
+In the sequence, an initial GET request fetches popular content, followed by a login attempt (POST request) with plaintext credentials. Subsequently, a redirection occurs after a successful login, and a GET request to the root is made with a cookie indicating the authenticated user. All websites must use encrypted protocols such as HTTPS
 
 
 # Part 2 
