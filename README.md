@@ -38,6 +38,14 @@ This Wireshark filter isolates TCP packets with source IP 10.0.2.15 on port 3710
 I can also use the matches or contains keyword to find a specific string in Wireshark: `ip matches "google"` or `eth matches "google" `
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/07418985-36e7-4d93-a3a4-923331f25312)
 
+Another filter is the `tcp.analysis.flags`
+![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/eb3f7fa2-1253-4fa8-a20a-94f8e1da5eb1)
+Tcp.analysis provides live metrics and analysis on a TCP flow, tracking sequence/ACK numbers to calculate performance stats like round-trip time. Tcp.analysis.flags indicates what TCP control flags like SYN and ACK are set on each packet, showing the connection state.
+There is also the `Exclusion Filter`. It is used to narrow down the displayed packets by excluding those that match certain conditions.
+For example:
+![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/5b1a2115-bbd7-4ada-8a9c-9602415d8b82)
+This filter will exclude TCP, QUIC, LLDP, CDP, and Ethernet frames with the destination MAC address ff:ff:ff:ff:ff:ff. By using this filter, you will focus on capturing only DNS Or UDP packets which will significantly decrease clutter 
+
 ### Start capture on Vulnerable website using HTTP protocol  
 I will visit the site `http://www.vulnweb.com/` it is a site to help you with manual penetration testing or for educational purposes
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/06985044-b088-4cc3-8d4c-48044b7f144f)
@@ -52,4 +60,4 @@ The stream shows the GET request then the POST request from the serverside which
 In the sequence, an initial GET request fetches popular content, followed by a login attempt (POST request) with plaintext credentials. Subsequently, a redirection occurs after a successful login, and a GET request to the root is made with a cookie indicating the authenticated user. It is crucial for all websites to use encrypted protocols such as HTTPS
 
 
-
+# Part 2 
