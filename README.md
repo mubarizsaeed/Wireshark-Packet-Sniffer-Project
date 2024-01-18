@@ -60,7 +60,7 @@ The stream shows the GET request and then the POST request from the serverside w
 ![image](https://github.com/mubarizsaeed/Wireshark-Packet-Sniffer-Project/assets/98554238/368a5997-2c96-4aba-af74-66efe1323b7b)
 In the sequence, an initial GET request fetches popular content, followed by a login attempt (POST request) with plaintext credentials. Subsequently, a redirection occurs after a successful login, and a GET request to the root is made with a cookie indicating the authenticated user. All websites must use encrypted protocols such as HTTPS
 
-###Summary:
+### Summary:
 - Setup Kali Linux VM with Wireshark for packet analysis
 - Captured and filtered network traffic to/from Google using IP, TCP port, and string filters
 - Analyzed first TLS handshake packets when visiting Google
